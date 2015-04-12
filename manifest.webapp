@@ -6,13 +6,13 @@
         "name": "Miguel A. de la Hoz",
         "url": "htt`://www.ibxsolutions.net"
     },
-    "launch_path": "/index.html",
+    "launch_path": "/ElRutero/index.html",
     "installs_allowed_from": ["*"],
     "icons": {
-        "128": "/img/icons/icon128x128.png",
-        "16": "/_img/icons/icon16x16.png",
-        "48": "/img/icons/icon48x48.png",
-        "60": "/img/icons/icon60x60.png"
+        "128": "/ElRutero/img/icons/icon128x128.png",
+        "16": "/ElRutero/ElRutero/img/icons/icon16x16.png",
+        "48": "/ElRutero/img/icons/icon48x48.png",
+        "60": "/ElRutero/img/icons/icon60x60.png"
     },
     "permissions": {
         "geolocation": {
