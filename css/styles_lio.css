@@ -102,7 +102,7 @@ section[role="region"] > header:first-child .icon {
 
 /* ICONO MENÚ */
 section[role="region"] > header:first-child .icon.icon-menu {
-  background-image: url(../_img/menu.png);
+  background-image: url(../img/menu.png);
   background-size: 100% auto;
 }
 
