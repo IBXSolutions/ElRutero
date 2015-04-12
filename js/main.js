@@ -178,8 +178,8 @@ $(function() {
             localStorage.rutaLocalStorage = "";
             numPunto = 0;
             guardaRuta(oldRuta[0][0], oldRuta[0][1]);
+            numPunto++;
             iRuta = oldRuta.length - 1;
-            numPunto = 0;
             guardaRuta(oldRuta[iRuta][0], oldRuta[iRuta][1]);
             iniciar();
         }
@@ -219,15 +219,28 @@ $(function() {
      * markerLng: longitud
      */
     
-    function nuevoMarker(numPunto, markerLat, markerLng, draggable){
+    function nuevoMarker(numPunto, markerLat, markerLng){
+        if (numPunto === 0) {
         map.addMarker({
-            lat: markerLat,
-            lng: markerLng,
-            title: "" + numPunto,
-            infoWindow: {
-                content: '<p>Punto Número ' + numPunto + '</p>'
-            },
-        });
+                lat: markerLat,
+                lng: markerLng,
+                title: "Inicio de ruta",
+                infoWindow: {
+                    content: '<p>Punto inicial de la ruta</p>'
+                },
+                icon: "img/home.png",
+            });
+        } else {
+            map.addMarker({
+                lat: markerLat,
+                lng: markerLng,
+                title: "Parada #" + numPunto,
+                infoWindow: {
+                    content: '<p>Parada #' + numPunto + '</p>'
+                },
+                icon: "img/step.png",
+            });
+        }
         
     }
     
