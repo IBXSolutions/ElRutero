@@ -18,9 +18,6 @@
         "geolocation": {
             "description": "Required to show your current location."
         },
-        "storage": {
-            "description": "Improves performance by caching some data locally."
-        },
         "systemXHR": {
             "description": "Required to load remote content"
         }
@@ -34,9 +31,6 @@
             "permissions": {
                 "geolocation": {
                     "description": "Requerido para mostrar su ubicacion."
-                },
-                "storage": {
-                    "description": "Mejora rendimiento almacenando algunos datos localmente."
                 },
                 "systemXHR": {
                     "description": "Requerido para cargar contenido remoto"
