@@ -1,0 +1,49 @@
+{
+    "name": "Routing master", 
+    "version": "0.1",
+    "description": "This App can draw your route on the map", 
+    "developer": {
+        "name": "Miguel A. de la Hoz", 
+        "url": "htt`://www.ibxsolutions.net"
+    }, 
+    "launch_path": "/index.html", 
+    "installs_allowed_from": [
+        "*"
+    ], 
+    "icons": {
+        "128": "/_img/icons/icon128x128.png", 
+        "16": "/_img/icons/icon16x16.png", 
+        "48": "/_img/icons/icon48x48.png", 
+        "60": "/_img/icons/icon60x60.png"
+    }, 
+    "permissions": {
+        "geolocation": {
+            "description": "Required to show your current location."
+        }, 
+        "storage": {
+            "description": "Improves performance by caching some data locally."
+        }, 
+        "systemXHR": {
+            "description": "Required to load remote content"
+        }
+    }, 
+    "csp": "default-src *; script-src 'self' maps.googleapis.com maps.google.com; object-src 'none'; style-src 'self' 'unsafe-inline'", 
+    "default_locale": "en", 
+    "locales": {
+        "es": {
+            "description": "App que monta tu ruta en el mapa", 
+            "name": "El Rutero", 
+            "permissions": {
+                "geolocation": {
+                    "description": "Requerido para mostrar su ubicacion."
+                }, 
+                "storage": {
+                    "description": "Mejora rendimiento almacenando algunos datos localmente."
+                }, 
+                "systemXHR": {
+                    "description": "Requerido para cargar contenido remoto"
+                }
+            }
+        }
+    }, 
+}

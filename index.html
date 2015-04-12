@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Ejercicio Obligatorio Final | Unidad 10</title>
+    <!-- SCRIPTS JS -->
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="_js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="_js/zepto.min.js"></script>
+    <script type="text/javascript" src="_js/gmaps.js"></script> 
+    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions), so we use a script file. -->
+    <script type="text/javascript" src="_js/main.js"></script>
+    <!-- STYLES CSS -->
+    <link rel="stylesheet" type="text/css" href="_css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="_css/styles_lio.css" />
+    <link rel="stylesheet" type="text/css" href="_css/drawer.css" />
+    <link rel="stylesheet" type="text/css" href="_css/confirm.css" />
+</head>
+
+<body>
+    <div id="dvLoading" style="display: none;"></div>
+    <section data-type="sidebar" role="region">
+        <header class="header-header">
+            <button class="button-drawer"> <span class="icon icon-menu"> menu </span> </button>
+            <menu type="toolbar"></menu>
+            <h1>&nbsp;Gestor de Rutas</h1>
+        </header>
+        <div class="map-div">
+            <article>
+                <div id="map"></div>
+            </article>
+        </div>
+        <nav id="drawer" class="drawer hide-left">
+            <ul>
+                <li><a id="iniciar" href="#">Reiniciar</a></li>
+                <li><a id="compactar" href="#">Compactar</a></li>
+            </ul>
+        </nav>
+    </section>
+</body>
+</html>

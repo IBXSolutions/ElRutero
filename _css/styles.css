@@ -1,0 +1,67 @@
+#latlng {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;                    /* posición absoluta a navegador */
+    top: 0;                                /* ajusta a borde de navegador */
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+#map {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;                   /* posición absoluta a navegador */
+    top: 50px;                            /* 4rem debajo de borde de navegador */
+    left: 0;                              /* ajusta a borde de navegador */
+    right: 0;
+    bottom: 0px;
+
+    background: rgba(0, 255, 0, 0.5);     /* verde si no hay mapa */
+    z-index: -1;
+}
+
+
+@font-face {
+	font-family: Fira;
+    font-style: normal;
+    font-weight: normal;
+	src: url(../_fonts/FiraSans-Light.otf);
+}
+
+html {
+    padding: 0;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+
+	font-family: Fira, serif;
+    background-color: #000000;
+}
+
+.hide {
+    display: none;
+}
+
+.hide-left {
+    left: -200px;
+    position: absolute;                   /* posición absoluta a navegador */
+    width: 200px; 
+}
+
+#dvLoading
+  {
+     background:transparent url(../_img/loading.gif) no-repeat center center;
+     height: 200px;
+     width: 200px;
+     position: fixed;
+     z-index: 1000;
+     left: 50%;
+     top: 50%;
+     margin: -100px 0 0 -100px;
+  }

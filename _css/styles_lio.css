@@ -1,0 +1,129 @@
+/* ----------------------------------
+ * HEADERS: default
+ * ---------------------------------- */
+section[role="region"] > header:first-child {
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  height: 1rem;
+  color: #fff;
+  background-color: black;
+  border: none;
+}
+
+section[role="region"] > header:first-child h1 {
+	font-size: 1.8rem;
+	line-height: 4rem;
+	text-align: left;
+	color: #fff;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	/*height: 100%;*/
+	font-weight: lighter;
+	padding: 0 1rem 0 3rem;
+}
+
+
+
+
+section[role="region"] > header:first-child menu[type="toolbar"] a,
+section[role="region"] > header:first-child menu[type="toolbar"] button {
+  -moz-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: auto;
+  min-width: 5rem;
+  height: 3rem;
+  margin-bottom: 0;
+  padding: 0 1rem;
+  border-radius: 0;
+  line-height: 4rem;
+  background: none;
+  text-align: center;
+  text-shadow: none;
+  z-index: 5;
+}
+
+
+section[role="region"] > header:first-child menu[type="toolbar"] {
+  padding: 0;
+  margin: 0;
+}
+
+section[role="region"] > header:first-child a,
+section[role="region"] > header:first-child button {
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.1em;
+  color: #fff;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+
+/* Pressed state */
+section[role="region"] > header:first-child button::-moz-focus-inner {
+  outline: none;
+  border: none;
+  margin-top: -0.2rem; /* To fix line-height bug (697451) */
+  padding: 0;
+}
+
+section[role="region"] > header:first-child > a:not([aria-disabled="true"]):active:after,
+section[role="region"] > header:first-child > button:not(:disabled):active:after,
+section[role="region"] > header:first-child > a:not([aria-disabled="true"]):hover:after,
+section[role="region"] > header:first-child > button:not(:disabled):hover:after,
+section[role="region"] > header:first-child menu[type="toolbar"] a:not([aria-disabled="true"]):hover,
+section[role="region"] > header:first-child menu[type="toolbar"] button:not(:disabled):hover,
+section[role="region"] > header:first-child menu[type="toolbar"] a:not([aria-disabled="true"]):active,
+section[role="region"] > header:first-child menu[type="toolbar"] button:not(:disabled):active  {
+  background-color: #dc6a0e !important;
+}
+
+/* Icon definitions */
+section[role="region"] > header:first-child .icon {
+  position: relative;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 -1rem;
+  background: transparent no-repeat center center / 2.5rem auto;
+  font-size: 0;
+  overflow: hidden;
+}
+
+/* ICONO MENÚ */
+section[role="region"] > header:first-child .icon.icon-menu {
+  background-image: url(../_img/menu.png);
+  background-size: 100% auto;
+}
+
+
+/* Navigation links (back, cancel, etc) */
+section[role="region"] > header:first-child > button,
+section[role="region"] > header:first-child > a {
+  position: relative;
+  width: 5rem;
+  height: 4rem;
+  background: none;
+  float: left;
+  overflow: visible;
+  margin: 0 -5rem 0 0;
+}
+
+
+section[role="region"] > header:first-child > button .icon,
+section[role="region"] > header:first-child > a .icon {
+  display: block;
+  margin: 0;
+  font-size: 0;
+}
+
